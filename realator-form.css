@@ -1,0 +1,90 @@
+body{
+    background-image: url(https://scontent.flos1-1.fna.fbcdn.net/v/t1.6435-9/120949504_348158159966684_4794974732243429657_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeE-ap5iByLrIOAFPLLL_KfyVpGGYhiH3U5WkYZiGIfdTuvUxUCn-Dp1WvIzZvygklddSBcxtU_4uSi54bkHCXIu&_nc_ohc=eJxQ3JripWgAX_FYse_&_nc_ht=scontent.flos1-1.fna&oh=00_AfCMmRDKZsrgrLHPuE22YSlsW_NFBfA7LJXqBKY5e65l4g&oe=64647EA7);
+    background-size: cover;
+    background-blend-mode: color;
+    background-color: rgba(2, 2, 28, 0.45);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.reg{
+   margin-top: 8px;
+    background-color: #4AB3F4;
+   padding: 5px;
+   font-family: monospace;
+   border: 0px;
+   border-radius: 10px;
+   color: white;
+}
+.login{
+   
+        margin-top: 8px;
+         background-color: #FFA500;
+        padding: 5px;
+        font-family: monospace;
+        border: 0px;
+        border-radius: 10px;
+        color: white;
+     }
+
+.form-div{
+    width: 500px;
+    height: 550px;
+    padding: 20px;
+    box-shadow: 5px 5px 30px black;
+    background-color: rgba(2, 2, 28);
+    border-radius: 20px;
+    
+}
+.login-div{
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 5px 5px 30px black;
+    background-color: rgba(2, 2, 28);
+    display: none;
+    border-radius: 30px;
+}
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+}
+
+input::placeholder {
+    color: #999;
+    font-family: monospace;
+  }
+  
+  input:focus,
+input:active {
+  box-shadow: 0px 2px 20px #075bb6;
+}
+input{
+    height: 50px;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color:transparent;
+color: white;
+border: 1px solid grey;
+}
+.checker{
+    width: 30px;
+    padding: 0px;
+}
+@media (max-width: 767px){
+    .login{
+        height: 60px;
+        font-size: 20px;
+    }
+    .reg{
+        height: 60px;
+        font-size: 20px;
+    }
+    .form-div{
+        height: 700px;
+    }
+}
