@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="upload-form">
+        <label for="file-input">Choose an image:</label>
+        <input type="file" id="file-input">
+        <label for="title-input">Enter a title:</label>
+        <input type="text" id="title-input">
+        <button type="submit">Submit</button>
+      </form>
+      
+      <div id="gallery"></div>
+</body>
+</html>
+<script>
+const gallery = document.getElementById("gallery");
+const uploadForm = document.getElementById("upload-form");
+const fileInput = document.getElementById("file-input");
+const titleInput = document.getElementById("title-input");
+const images = []; // empty array to store uploaded images
+
+uploadForm.addEventListener("submit", function(event) {
+  event.preventDefault(); // prevent form submission
+  
+  const file = fileInput.files[0]; // get the first file from the input
+  const title = titleInput.value; // get the title from the input
+  const image = URL.createObjectURL(file); // create a URL for the image
+  images.push({ title: title, image: image }); // add the details to the images array
+  displayGallery(); // display the updated gallery
+  uploadForm.reset(); // reset the form
+  console.log(image);
+});
+
+function displayGallery() {
+  gallery.innerHTML = ""; // clear the gallery
+  
+  images.forEach(function(item) {
+    const div = document.createElement("div"); // create a div for the image
+    const img = document.createElement("img"); // create an img element
+    const p = document.createElement("p"); // create a p element
+    img.src = item.image; // set the src attribute of the img element
+    img.alt = item.title; // set the alt attribute of the img element
+    p.textContent = item.title; // set the text content of the p element
+    div.appendChild(img); // add the img element to the div
+    div.appendChild(p); // add the p element to the div
+    gallery.appendChild(div); // add the div to the gallery
+  });
+}
+</script>

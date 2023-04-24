@@ -43,4 +43,24 @@ function logpop() {
     document.getElementById("signup").style.display = "none"
     document.getElementById("login").style.display = "block"
 }
+function loggin() {
+    const users = JSON.parse(localStorage.getItem('users'));
+    let names = document.getElementById("logname").value;
+    let passwords = document.getElementById("logpassword").value;
+    
+if (!names||!passwords) {
+    alert('Please fill all the required fields');
+    return;
+  }
+  else{
+    const nameexist = users.some((u) => u.name === names && u.password === passwords);
+  if (nameexist) {
+    localStorage.setItem('currentUserName', names);
+    window.location.href = 'pre-register.html'; 
+  }
+  else{
+    alert("incorrect email or password")
+  }
+  }
+}
 

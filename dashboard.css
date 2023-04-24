@@ -1,0 +1,186 @@
+.nav-bar{
+    background-color: rgb(2, 2, 35);
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+}
+.glow{
+    font-family: cursive;
+    text-decoration: none; 
+    color: black;
+}
+.logo{
+    width: 150px;
+   
+}
+.story{
+    width: 250px;
+    position: absolute;
+    z-index: 2;
+    bottom: 30px;
+    margin-left: 50%;
+}
+.glow:hover {
+    text-shadow: 0 0 10px #fff;
+    transition: box-shadow 0.5s ease-in-out;
+    text-decoration: underline;
+    color: white;
+  }
+  body{
+    height: 1000px;
+  }
+  .caro-image{
+    width: 100%;
+    z-index: -1;
+    height: 90vh;
+    filter: brightness(40%);
+  }
+  .caro-text1{
+    position: absolute;
+    color: #fff;
+    font-size: 85px;
+    z-index: 2;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+  }
+  .caro-text2{
+    position: absolute;
+    color: #fff;
+    font-size: 85px;
+    margin-top: 40px;
+    z-index: 2;
+    margin-right: 20%;
+    margin-left: 20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+  }
+ 
+  .relative-carousel1{
+    position: relative;
+ 
+  }
+  .relative-carousel2{
+    position: relative;
+  }
+  .relative-carousel3{
+    position: relative;
+  }
+  .hostels{
+    display: flex;
+    /* flex-wrap: wrap; */
+   /* justify-content: center; */
+   width: 100%;
+   min-width: 350px;
+   min-height: 500px
+   ;
+   overflow-x: scroll;
+  }
+  .hostel-image{
+    width: 350px;
+    height: 100%;
+    border-radius: 20px;
+  }
+  
+  .hostel-inner{
+    margin-left: 10px;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    top: 40px;
+    padding-bottom: 40px;
+  }
+.hostel-absolute1{
+    position: absolute;
+   
+   top: 0;
+    /* display: flex; */
+   right: 0;
+   padding-left: 40px;
+   font-size: 20px;
+   padding-right: 20px;
+   font-family: cursive;
+   border-bottom-left-radius: 30px;
+   color: white;
+   background-color: rgb(20, 20, 99);
+}
+.hostel-absolute2{
+    position: absolute;
+    background-color: rgb(217, 104, 0);
+    bottom: 50px;
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+    font-family: cursive;
+    padding-right: 40px;
+    border-bottom-right-radius: 30px;
+}
+
+.supported-holder1{
+   width: 80%;
+    position: absolute;
+    z-index: 2;
+    height: fit-content;
+    top: 350px;
+    margin-left: 10%;
+    border-radius: 30px;
+    background-color: rgb(2, 2, 35);
+}
+
+
+  @media (max-width: 768px){
+    .logo{
+        width: 100px;
+    }
+    .supported-holder{
+        width: 105%;
+         position: absolute;
+         z-index: 2;
+         height: fit-content;
+         top: 350px;
+         border-radius: 30px;
+         background-color: rgb(217, 105, 0);
+     }
+     
+    .caro-image{
+        width: 100%;
+        height: 50vh;
+  }
+  .caro-text1{
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    z-index: 2;
+    margin-top: 90px;
+    
+    display: block;
+  }
+  .hostel-{
+    width: 100%;
+  }
+  .caro-text2{
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    z-index: 2;
+    margin-top: 90px;
+  }
+  .caro-text3{
+    position: absolute;
+    color: #fff;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 38px;
+    z-index: 2;
+    margin-top: 90px;
+  }
+
+}

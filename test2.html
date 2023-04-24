@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .small-div {
+  background-color: green;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+}  
+    </style>
+</head>
+<body>
+    <label for="input">Enter number of divs:</label>
+<input type="number" id="input">
+<button id="create-btn">Create</button>
+<div id="container"></div>
+</body>
+</html>
+<script>
+    const createBtn = document.getElementById('create-btn');
+const input = document.getElementById('input');
+const container = document.getElementById('container');
+
+createBtn.addEventListener('click', () => {
+  // get the number of divs to create from the input
+  const numDivs = parseInt(input.value);
+
+  // create the divs and add them to the container
+  for (let i = 0; i < numDivs; i++) {
+    const div = document.createElement('div');
+    div.classList.add('small-div');
+    container.appendChild(div);
+  }
+});
+</script>

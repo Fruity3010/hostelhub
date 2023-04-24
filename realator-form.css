@@ -32,7 +32,7 @@ body{
 
 .form-div{
     width: 500px;
-    height: 550px;
+    height: 600px;
     padding: 20px;
     box-shadow: 5px 5px 30px black;
     background-color: rgba(2, 2, 28);
@@ -72,8 +72,9 @@ color: white;
 border: 1px solid grey;
 }
 .checker{
-    width: 30px;
-    padding: 0px;
+    width: 25px;
+    padding-top: 0px;
+    height: 25px;
 }
 @media (max-width: 767px){
     .login{
