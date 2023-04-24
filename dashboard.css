@@ -70,15 +70,61 @@
   .relative-carousel3{
     position: relative;
   }
+  .contt{
+   background-color:rgb(204, 229, 255) ; 
+   width: 100%;
+   padding-top: 100px;
+  }
   .hostels{
     display: flex;
     /* flex-wrap: wrap; */
    /* justify-content: center; */
    width: 100%;
    min-width: 350px;
-   min-height: 500px
-   ;
+   min-height: 500px;
    overflow-x: scroll;
+  }
+  .side{
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 80%;
+    border-bottom-left-radius: 10%;
+    padding-left: 100px;
+    padding-top: 100px;
+  }
+  .one-click{
+    font-family:  'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(2, 2, 35);
+  position: absolute;
+    bottom: -100%;
+    animation: slide-in 5s forwards;
+    width: 86%;
+  }
+  .text-holder{
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    padding-top: 60px;
+    height: 150px;
+    margin-left: 13%;
+  }
+  .content001{
+   margin-top: 30px;
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+  }
+  .hostels::-webkit-scrollbar-thumb {
+    background-color: rgb(2, 2, 35);
+    width: 200px;
+  }
+  @keyframes slide-in {
+    100% {
+    bottom: 0;
+    }
+  }
+  .hostels::-webkit-scrollbar {
+    background-color: #f5f5f5;
   }
   .hostel-image{
     width: 350px;

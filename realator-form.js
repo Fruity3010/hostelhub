@@ -55,8 +55,8 @@ if (!names||!passwords) {
   else{
     const nameexist = users.some((u) => u.name === names && u.password === passwords);
   if (nameexist) {
-    localStorage.setItem('currentUserName', names);
-    window.location.href = 'pre-register.html'; 
+    localStorage.setItem('currentUserName', document.getElementById("logname").value);
+    window.location.href = 'dashboard.html'; 
   }
   else{
     alert("incorrect email or password")

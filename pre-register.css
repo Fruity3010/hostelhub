@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(253, 255, 252);
+    background-color: rgb(238,229,219);
 }
 .buttons{
 width: 230px;
@@ -148,13 +148,24 @@ transition: 2s ease-in-out ;
   width: 220px;
   height: 200px;
   margin-left: 20%;
+ ;
 }
 .story-holder{
   width: 100.6%;
   padding: 60px;
-  background: linear-gradient(to bottom,#05052e 0% , #1d1d7e  100%);
+  background:rgb(204, 229, 255);
 }
-.stories{
+.stories1{
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  align-items: center;
+  align-content: center;
+  border-radius: 30px;
+  margin: 50px 20px 10px 10px;
+  transform: rotate(-10deg)
+}
+.stories2{
   width: 100%;
   height: 400px;
   background-color: white;
@@ -162,6 +173,17 @@ transition: 2s ease-in-out ;
   align-content: center;
   border-radius: 30px;
   margin: 10px 10px 10px 10px;
+  transform: rotate(0deg)
+}
+.stories3{
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  align-items: center;
+  align-content: center;
+  border-radius: 30px;
+  margin: 50px 10px 10px 20px;
+  transform: rotate(10deg)
 }
 
 @media (max-width: 767px){
@@ -179,7 +201,7 @@ transition: 2s ease-in-out ;
 .intro-text{
     margin-top: 30px;
     margin-left: 50px;
-    width: 90%;
+    width: 85%;
     padding: 0px;
   color: white;
   font-size: 45px;
@@ -228,7 +250,7 @@ margin: 10%;
   .story-holder{
     width: 100%;
     padding: 60px;
-    background: linear-gradient(to bottom,#05052e 0% , #1d1d7e  100%);
+    background:  rgb(204, 229, 255);
   }
   .storyset{
     width: 220px;
