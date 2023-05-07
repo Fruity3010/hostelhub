@@ -1,0 +1,245 @@
+.nav-bar{
+    background-color: rgb(2, 2, 35);
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+}
+.center{
+    display: flex;
+    justify-content:center ;
+}
+.glow{
+    font-family: cursive;
+    text-decoration: none; 
+    color: black;
+}
+.logo{
+    width: 150px;
+   
+}
+.glow:hover {
+    text-shadow: 0 0 10px #fff;
+    transition: box-shadow 0.5s ease-in-out;
+    text-decoration: underline;
+    color: white;
+  }
+  .profile{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+  }
+  .post-holder{
+    position: absolute;
+    display: none;
+    width: 100%;
+    padding-left: 30%;
+
+   
+  }
+  .close{
+    width: 60px;
+    height: 40px;
+    z-index: 3;
+  }
+  .topic{
+    font-style: oblique;
+    font-size: 15px;
+  }
+  .footer{
+    font-size: 12px;
+    font-family: monospace;
+   }
+  .logo2{
+    width: 200px;
+    top: 0px;
+  }
+  .containerr{
+    background-color: rgb(2, 2, 28);
+    padding: 40px;
+    width: 100%;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+   
+  }
+  .colour{
+    background-color: rgb(2, 2, 35);
+    border-radius: 20px;
+   }
+   .colourr{
+    background-color: rgb(2, 2, 28);
+   }
+ 
+  .Post-form{
+   width: 500px;
+   background-color: rgb(2, 2, 35);
+   padding: 20px;
+   margin: 10px;
+   position: relative;
+   border-radius: 30px;
+  }
+ .names{
+    margin-top: 5%;
+    padding-right: 50px;
+    padding-left: 50px;
+ }
+ .realator-button{
+    display: none;
+ }
+ .display{
+    font-family: monospace;
+    padding: 20px;
+ }
+ .flexer{
+    display: flex;
+    justify-content: space-around;
+ }
+ .listings{
+    background-color: rgb(2, 2, 35);
+    padding: 5px;
+    margin-top: 50px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ .utilities{
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+   font-size: 15px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ .preview{
+    background-color: rgb(247, 245, 245);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 30px;
+ }
+ .image-pre{
+    width: 100%;
+    height: 200px;
+ }
+ .size{
+  font-size: medium;
+}
+.hostels{
+  display: flex;
+  /* flex-wrap: wrap; */
+ /* justify-content: center; */
+ width: 100%;
+ min-width: 400px;
+ min-height: 560px;
+
+ overflow-x: scroll;
+}
+.hostel-image{
+  width: 350px;
+  height: 100%;
+  margin-bottom: 2px;
+  border-radius: 20px;
+}
+
+
+.hostel-inner{
+  margin-left: 10px;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  top: 40px;
+  border: 5px solid transparent;
+  padding-bottom: 50px;
+}
+.contentshost{
+padding: 5px 10px 10px 20px;
+border-radius: 20px;
+font-family: cursive;
+
+background-color: rgb(204, 229, 255);
+} 
+.hostel-absolute1{
+  position: absolute;
+ 
+ top: 0;
+  /* display: flex; */
+ right: 0;
+ padding-left: 40px;
+ font-size: 20px;
+ padding-right: 20px;
+ font-family: cursive;
+ border-bottom-left-radius: 30px;
+ color: white;
+ background-color: rgb(2, 2, 35);
+}
+.flexer{
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding: 2px;
+ }
+.hostel-absolute2{
+  position: absolute;
+  background-color: rgb(217, 104, 0);
+  bottom: 50px;
+  font-size: 20px;
+  color: white;
+  padding-left: 20px;
+  font-family: cursive;
+  padding-right: 40px;
+  border-bottom-right-radius: 30px;
+}
+.absolute2{
+  position: absolute;
+  background-color: rgb(217, 104, 0);
+  bottom: 50px;
+  font-size: 20px;
+  color: white;
+  padding-left: 20px;
+  font-family: cursive;
+  padding-right: 40px;
+  border-bottom-right-radius: 30px;
+}
+.hostel-{
+  width: 100%;
+}
+.supported-holder1{
+ width: 80%;
+  position: absolute;
+  z-index: 2;
+  height: fit-content;
+  top: 350px;
+  margin-left: 10%;
+  border-radius: 30px;
+  background-color: rgb(2, 2, 35);
+}
+
+    @media (max-width: 768px){
+.Post-form{
+    width: 100%;
+   
+
+}
+.post-holder{
+    padding-left: 0px;
+}
+.logo{
+    width: 100px;
+}
+.preview{
+    width: 100%;
+}
+.supported-holder{
+  width: 105%;
+   position: absolute;
+   z-index: 2;
+   height: fit-content;
+   top: 350px;
+   border-radius: 30px;
+   background-color: rgb(217, 105, 0);
+}
+.hostel-{
+  width: 100%;
+}
+
+    }

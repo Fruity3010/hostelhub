@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" id="imageInput">
+<button onclick="convertToLink()">Convert to Link</button>
+<img id="imageLink" src="" alt="">
+</body>
+</html>
+<script>
+    function convertToLink() {
+  const imageInput = document.getElementById('imageInput');
+  const imageLink = document.getElementById('imageLink');
+  
+  if (imageInput.files && imageInput.files[0]) {
+    const file = imageInput.files[0];
+    const reader = new FileReader();
+    reader.onload = function(event) {
+      const dataUrl = event.target.result;
+      imageLink.src = dataUrl;
+
+     console.log(file);
+    };
+    reader.readAsDataURL(file);
+  }
+}
+</script>

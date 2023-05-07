@@ -1,49 +1,116 @@
-const hostels = [
-    { imageSrc: "test1.jpg", price: 19.99 , name:"gloryville", details:"2 bedroom",space:"8"},
-    { imageSrc: "test 2.jpg", price: 29.99 ,name:"Lords Marvelous",details:"1 bedroom",space:"8"},
-    { imageSrc: "test 3.jpg", price: 39.99 , name:"Eagle line",details:"3 bedroom",space:"8"},
-    { imageSrc: "test1.jpg", price: 19.99 , name:"gloryville", details:"2 bedroom",space:"8"},
-    { imageSrc: "test 2.jpg", price: 29.99 ,name:"Lords Marvelous",details:"1 bedroom",space:"8"},
-    { imageSrc: "test 3.jpg", price: 39.99 , name:"Eagle line",details:"3 bedroom",space:"8"},
-    { imageSrc: "test1.jpg", price: 19.99 , name:"gloryville", details:"2 bedroom",space:"8"},
-    { imageSrc: "test 2.jpg", price: 29.99 ,name:"Lords Marvelous",details:"1 bedroom",space:"8"},
-    { imageSrc: "test 3.jpg", price: 39.99 , name:"Eagle line",details:"3 bedroom",space:"8"},
-    { imageSrc: "test1.jpg", price: 19.99 , name:"gloryville", details:"2 bedroom,",space:"8"},
-    { imageSrc: "test 2.jpg", price: 29.99 ,name:"Lords Marvelous",details:"1 bedroom",space:"8"},
-    { imageSrc: "test 3.jpg", price: 39.99 , name:"Eagle line",details:"3 bedroom",space:"8"},
-  ];
-   let hostelContainer = document.getElementById("hostel-display");
-for (let i = 0; i < hostels.length; i++) {
-  hostelContainer.innerHTML += `
-    <div onclick="hosteldtls(index)" class="hostel-inner">
-    
-      <img class="hostel-image" src="${hostels[i].imageSrc}" alt="Product Image">
-      <p class="hostel-absolute1">Hostel: ${hostels[i].name}</p>
-      <p class="hostel-absolute2">Price:₦ ${hostels[i].price}</p>
-      <p class="hostel-details">Details: ${hostels[i].details}</p>
-    <p>Hostel Rooms:  ${hostels[i].space}</p>
-    </div>
-  `;
-  console.log(localStorage);
-}
-// function hosteldtls() {
-//     let detailsContainer = document.getElementById("second-display")
-
-//     let clickedObject = hostels[index];
-//         let detailsString = `
-//           <p>Name: ${clickedObject.name}</p>
-//           <p>Price: ₦ ${clickedObject.price}</p>
-//           <p>Details: ${clickedObject.details}</p>
-//           <p>Rooms: ${clickedObject.space}</p>
-//         `;
-//         detailsContainer.innerHTML = detailsString;
-//       }
-
-    
-    
+const hostels2 = [];
+const arrayString2 = JSON.stringify(hostels2);
+localStorage.setItem('ActiveHostel', arrayString2)
 
 
 
+const arraystring1 = localStorage.getItem('myArray');
+const hostels1 = JSON.parse(arraystring1);
+
+let i = -1
+let html1 = '';
+hostels1.forEach((item) => {
+  i++
+  html1 += ` 
+      <div id="she" onclick="puller(${i})">
+      <div class="hostel-inner">
+        <img class="hostel-image" src="${item.sourceImageSrc}" alt="Product Image">
+       <p class="hostel-absolute1">${item.hostname}</p>
+       <div class="contentshost">
+       <p class="hostel-absolute2"> ${item.price}</p>
+       <p> ${item.agent2}</p>
+       <p> ${item.city}</p>
+       <p> ${item.hostdetails}</p>
+       </div>
+       <h6 class="ms-3">Utilities</h6>
+       <div class="flexer colour">
+       <h6><i class="fa-solid fa-broom " style="color: #ffff;"></i> ${item.cleaner2}</h6>
+       <h6><i class="fa-solid fa-jug-detergent" style="color:#ffff;"></i> ${item.laundary2}</h6>
+       <h6><i class="fa-solid fa-bolt-lightning " style="color: #ffff;"></i> ${item.solar2}</h6>
+       </div>
+       </div>
+       </div>`;
+       let hostelContainer = document.getElementById("hostel-display");
+       hostelContainer.innerHTML = html1
+});
+
+
+const arraystring2 = localStorage.getItem('myArray');
+const hostels3 = JSON.parse(arraystring1);
+hostels3.sort(() => Math.random() - 0.5);
+
+let e = -1
+let html2 = '';
+hostels3.forEach((item) => {
+  e++
+  html2 += ` 
+      <div id="she" onclick="puller(${e})">
+      <div class="hostel-inner">
+        <img class="hostel-image" src="${item.sourceImageSrc}" alt="Product Image">
+       <p class="hostel-absolute1">${item.hostname}</p>
+       <div class="contentshost">
+       <p class="hostel-absolute2"> ${item.price}</p>
+       <p> ${item.agent2}</p>
+       <p> ${item.city}</p>
+       <p> ${item.hostdetails}</p>
+       </div>
+       <h6 class="ms-3">Utilities</h6>
+       <div class="flexer colour">
+       <h6><i class="fa-solid fa-broom " style="color: #ffff;"></i> ${item.cleaner2}</h6>
+       <h6><i class="fa-solid fa-jug-detergent" style="color:#ffff;"></i> ${item.laundary2}</h6>
+       <h6><i class="fa-solid fa-bolt-lightning " style="color: #ffff;"></i> ${item.solar2}</h6>
+       </div>
+       </div>
+       </div>`;
+      let hostelContainer2 = document.getElementById("hostel-display2");
+  hostelContainer2.innerHTML += html2
+});
+
+
+  
+
+
+const arraystring = localStorage.getItem('myArray');
+const storedArray = JSON.parse(arraystring);
+storedArray.reverse();
+console.log(storedArray);
+
+let index = -1
+let html = '';
+storedArray.forEach((item) => {
+  index++
+  html += ` 
+      <div id="she" onclick="puller(${index})">
+      <div class="hostel-inner">
+        <img class="hostel-image" src="${item.sourceImageSrc}" alt="Product Image">
+       <p class="hostel-absolute1">${item.hostname}</p>
+       <div class="contentshost">
+       <p class="hostel-absolute2"> ${item.price}</p>
+       <p> ${item.agent2}</p>
+       <p> ${item.city}</p>
+       <p> ${item.hostdetails}</p>
+       </div>
+       <h6 class="ms-3">Utilities</h6>
+       <div class="flexer colour">
+       <h6><i class="fa-solid fa-broom " style="color: #ffff;"></i> ${item.cleaner2}</h6>
+       <h6><i class="fa-solid fa-jug-detergent" style="color:#ffff;"></i> ${item.laundary2}</h6>
+       <h6><i class="fa-solid fa-bolt-lightning " style="color: #ffff;"></i> ${item.solar2}</h6>
+       </div>
+       </div>
+       </div>`;
+  document.getElementById("work").innerHTML = html
+});
+
+function puller(index) {
+console.log(storedArray[index]);
+
+console.log(storedArray[index]);
+localStorage.setItem("viewedhostel",JSON.stringify(storedArray[index]));
+window.location.href = "payment.html"
+  
+
+     
+};
 
 
 

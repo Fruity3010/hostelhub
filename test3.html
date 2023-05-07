@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .my-div{
+        background-color: red;
+    }
+</style>
+<body>
+    <div class="my-div" id="overflow" onclick="displayer()">
+        <h2>Details:</h2>
+      
+      </div>
+</body>
+</html>
+<script>
+  const myArray = [
+  {
+    name: "John",
+    age: 32,
+    city: "New York",
+    country: "USA",
+    email: "john@example.com",
+    phone: "555-1234"
+  },
+  {
+    name: "Alice",
+    age: 25,
+    city: "London",
+    country: "UK",
+    email: "alice@example.com",
+    phone: "555-5678"
+  },
+  {
+    name: "Bob",
+    age: 41,
+    city: "Sydney",
+    country: "Australia",
+    email: "bob@example.com",
+    phone: "555-9012"
+  }
+];
+
+  // Get a reference to the div that will display the first three details
+
+const diver = document.getElementById("overflow")
+myArray.forEach(obj => {
+      const para = document.createElement("p");
+      para.textContent = `Name: ${obj.name}, Age: ${obj.age}`;
+      diver.appendChild(para);
+
+});
+
+// Add a click event listener to the div that will display the additional five details
+ function displayer() {
+    // Create a new div to display the additional details
+  const detailsDiv = document.createElement("div");
+  
+  // Add the additional details to the new div
+  detailsDiv.innerHTML = `
+    <h2>Additional Details:</h2>
+    <ul>
+      <li>Country: ${myArray[0].country}</li>
+      <li>Email: ${myArray[0].email}</li>
+      <li>Phone: ${myArray[0].phone}</li>
+    </ul>
+  `;
+  
+  // Append the new div to the document
+  document.body.appendChild(detailsDiv);
+};
+ }{
+  
+</script>

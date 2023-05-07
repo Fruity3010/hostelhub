@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="profile.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nav-bar ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#"><img class="logo" src="2-removebg-preview.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light"><i class="fa-solid fa-bars"
+                        style="color: #ffffff;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse colour" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light ms-5 glow" aria-current="page" href="dashboard.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-5 glow" href="#">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-5 glow" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown text-light ms-5 glow">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Profile
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">About</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row w-100 ">
+        <div class="profile col-md-6 ">
+            <img class=" w-50 " src="https://static.vecteezy.com/system/resources/thumbnails/009/734/564/small/default-avatar-profile-icon-of-social-media-user-vector.jpg" alt="">
+        </div>
+        <div class="col-md-6 names">
+            <label for="">
+                Name
+                <input class="w-100 py-3 my-2 " id="name" type="text" disabled>
+            </label>
+            <label for="">
+                Email
+                <input class="w-100 py-3" type="email" id="email" disabled>
+            </label>
+            <label for="">
+                Status
+                <input id="Realator" class=" w-100 py-3" type="text" disabled>
+            </label>
+
+            <button class="btn btn-danger realator-button" id="real" onclick="poster()"> Post + </button>
+        </div>
+        <div class="center post-holder" id="holder">
+           
+            <div class="Post-form text-center text-light">
+
+                <label for="">
+                    Images:
+                    <input class="w-100" id="image" type="file" accept="image/*" multiple >
+          
+                </label>
+                <div class="" id="image-pre">
+
+                </div>
+                <label for="">
+                    Hostel Name:
+                    <input class="w-100" type="text" required id="hname">
+                </label>
+                <label for="">
+                    City(Lagos)
+                    <select class="w-100" name="" id="town">
+                        <option value="Meiran">Meiran</option>
+                        <option value="Yaba">Yaba</option>
+                        <option value="Lekki">Lekki</option>
+                        <option value="Sango">Sango</option>
+                        <option value="Ikeja">Ikeja</option>
+                        <option value="Epe">Epe</option>
+                    </select>
+                </label>
+                <label for="">
+                    Rooms:
+                    <input class="w-100" type="text" required id="hdetail">
+                </label>
+                <label for="">
+                    Price:₦
+                    <input class="w-100 naira" type="number" id="price">
+                </label>
+                <div class="w-100" class="utilities">
+                    <h1 class="utilities">Utilities</h1>
+                    <label for="">
+                        Solar-Powered
+                        <input type="checkbox" name="" id="solar">
+                    </label>
+                    <label for="">
+                        Laundry Mart
+                        <input type="checkbox" id="laundary">
+                    </label>
+                    <label for="">
+                        Cleaners Available on Request
+                        <input type="checkbox" id="cleaner">
+                    </label>
+                     <button id="previeww" onclick="preview()">Preview</button>
+                  
+                 </div>
+                   <br>
+                    <div class="preview text-dark" id="previewdis">
+
+                        <div id="previewdis2">
+
+                        </div>
+                    </div> 
+               
+          
+
+                    </div>
+            <button class="btn btn-danger close" onclick="closee()">Close</button>
+        </div>
+/
+    </div>
+    <h1 class="listings">Top Listings</h1>
+    <div id="hostel-display" class="hostels">
+        
+    </div>
+    <div class="containerr">
+   
+        <div class="row footer">
+         <div class="col ">
+          <img class=" logo2" src="2-removebg-preview.png" alt="">
+         </div>
+         <div class="col">
+          <h5 class="topic">Call Support</h5>
+          <p>09137751577</p>
+          <p>Hostelhub@gmail.com</p>
+          <p>Hostelhubsupport@gmail.com</p>
+          <p>Ladoke akintola, Ibadan, Bodija</p>
+         </div>
+         <div class="col">
+          <h5 class="topic">Services</h5>
+          <p>Moving</p>
+          <p>Housing Agents</p>
+          <p>Hostel Agent</p>
+          <p>Hostel Agent</p>
+         </div>
+         <div class="col">
+          <h5 class="topic">Hostelhub</h5>
+          <p>Home</p>
+          <p>About Us</p>
+          <p>What we do</p>
+          <p>Jobs</p>
+         </div>
+        </div>
+        <hr>
+        <div class="footer2 center colourr">
+          <i class="fa-brands fa-facebook fa-beat mx-2" style="color: #fafafa;"></i>
+          <i class="fa-brands fa-square-instagram fa-beat mx-2" style="color: #ffffff;"></i>
+          <i class="fa-brands fa-square-twitter mx-2 fa-beat" style="color: #ffffff;"></i>
+          <i class="fa-brands fa-tiktok fa-beat mx-2" style="color: #ffffff;"></i>
+        </div>
+        
+      </div>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/4b478d8f1c.js" crossorigin="anonymous"></script>
+<script src="profile.js"></script>
