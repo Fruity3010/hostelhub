@@ -14,6 +14,7 @@ hostels1.forEach((item) => {
   html1 += ` 
       <div id="she" onclick="puller(${i})">
       <div class="hostel-inner">
+     
         <img class="hostel-image" src="${item.sourceImageSrc}" alt="Product Image">
        <p class="hostel-absolute1">${item.hostname}</p>
        <div class="contentshost">
@@ -81,7 +82,7 @@ storedArray.forEach((item) => {
   index++
   html += ` 
       <div id="she" onclick="puller(${index})">
-      <div class="hostel-inner">
+      <div class="hostel-inner ">
         <img class="hostel-image" src="${item.sourceImageSrc}" alt="Product Image">
        <p class="hostel-absolute1">${item.hostname}</p>
        <div class="contentshost">
