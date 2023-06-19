@@ -200,7 +200,12 @@ font-family: 'Times New Roman', Times, serif;
     margin-bottom: 2px;
     border-radius: 20px;
   }
-  
+  .flexer{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding: 2px;
+   }
   
   .hostel-inner{
     margin-left: 10px;
@@ -232,13 +237,17 @@ font-family: 'Times New Roman', Times, serif;
    color: white;
    background-color: rgb(2, 2, 35);
 }
+.disabled{
+  position: absolute;
+  color: red;
+}
 .top-r{
   font-size: 37px;
   font-family: 'Times New Roman', Times, serif;
   padding: 20px;
   color: white;
   background-color: rgb(2, 2, 35);
- 
+ width: 100%;
 }
 
 .hostel-absolute2{
@@ -297,6 +306,13 @@ font-family: 'Times New Roman', Times, serif;
   .hostel-{
     width: 100%;
   }
+  .hostel-image{
+    width: 320px;
+    height: 100%;
+    margin-bottom: 2px;
+    border-radius: 20px;
+  }
+  
   .caro-text2{
     position: absolute;
     color: #fff;
@@ -314,6 +330,15 @@ font-family: 'Times New Roman', Times, serif;
     font-size: 38px;
     z-index: 2;
     margin-top: 90px;
+  }
+  .hostel-inner{
+    margin-left: 10px;
+    position: relative;
+    width: 100%;
+    height: 320px;
+    top: 40px;
+    border: 2px solid transparent;
+    padding-bottom: 50px;
   }
 
 }
